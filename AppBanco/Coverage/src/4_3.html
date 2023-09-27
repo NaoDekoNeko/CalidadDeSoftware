@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\AppBanco\TestTransferencias\TestTransferenciaInterbancaria.cs</title>
+    <script type="text/javascript" src="../js/dotcover.sourceview.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/dotcover.report.css" />
+  </head>
+  <body>
+    <pre id="content" class="source-code">
+using System;
+using AppBanco;
+using Moq;
+using Xunit;
+
+namespace TestTransferencias
+{
+    public class TestTransferenciaInterbancaria
+    {
+        private Mock&lt;IDebitar&gt; _cuentaOrigenMock = new Mock&lt;IDebitar&gt;();
+        private Mock&lt;ICuentaExterna&gt; _cuentaDestinoExternaMock = new Mock&lt;ICuentaExterna&gt;();
+        private IAbonar _cuentaDestino;
+        private ITransferencia _transferencia = new Transferencia();
+
+        public TestTransferenciaInterbancaria()
+        {
+            _cuentaDestino = new AdaptadorCuenta(_cuentaDestinoExternaMock.Object);
+        }
+
+        [Fact]
+        public void TestTransferenciaInterbancariaExitosa()
+        {
+            // Arrange
+            decimal montoTransferencia = 100;
+
+            // Act
+            _transferencia.Transferir(_cuentaOrigenMock.Object, _cuentaDestino, montoTransferencia);
+
+            // Assert
+            _cuentaOrigenMock.Verify(c =&gt; c.Debitar(montoTransferencia), Times.Once());
+            _cuentaDestinoExternaMock.Verify(c =&gt; c.AbonarExterno(montoTransferencia), Times.Once());
+        }
+
+        [Fact]
+        public void TestTransferenciaInterbancariaFallida()
+        {
+            // Arrange
+            decimal montoTransferencia = 100;
+
+            // Configuramos el mock de la cuenta de origen para que lance una excepci&#243;n cuando se llame al m&#233;todo Debitar
+            _cuentaOrigenMock.Setup(c =&gt; c.Debitar(It.IsAny&lt;decimal&gt;())).Throws(new InvalidDebitOperationException(&quot;&quot;));
+
+            // Act - Assert
+            var ex = Assert.Throws&lt;InvalidTransferenceOperationException&gt;(() =&gt;
+                _transferencia.Transferir(_cuentaOrigenMock.Object, _cuentaDestino, montoTransferencia));
+        
+            Assert.Equal(&quot;No se pudo debitar desde la cuenta de origen debido a falta de fondos.&quot;, ex.Message);
+
+            // Verificamos que el m&#233;todo Abonar no fue llamado en la cuenta destino
+            _cuentaDestinoExternaMock.Verify(c =&gt; c.AbonarExterno(It.IsAny&lt;decimal&gt;()), Times.Never());
+        }
+    }
+}
+    </pre>
+    <script type="text/javascript">
+      highlightRanges([[10,9,10,73,1],[11,9,11,93,1],[13,9,13,69,1],[15,9,15,48,1],[16,9,16,10,1],[17,13,17,84,1],[18,9,18,10,1],[22,9,22,10,1],[24,13,24,46,1],[27,13,27,101,1],[30,13,30,88,1],[31,13,31,102,1],[32,9,32,10,1],[36,9,36,10,1],[38,13,38,46,1],[41,13,41,121,1],[44,13,45,17,1],[45,17,45,104,1],[45,104,45,106,1],[47,13,47,112,1],[50,13,50,104,1],[51,9,51,10,1]]);
+    </script>
+  </body>
+</html>

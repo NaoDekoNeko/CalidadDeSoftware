@@ -1,0 +1,6 @@
+C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\AppBanco\AppBanco\bin\Debug\AppBanco.exe
+C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\AppBanco\AppBanco\bin\Debug\AppBanco.pdb
+C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\AppBanco\AppBanco\obj\Debug\AppBanco.csproj.AssemblyReference.cache
+C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\AppBanco\AppBanco\obj\Debug\AppBanco.csproj.CoreCompileInputs.cache
+C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\AppBanco\AppBanco\obj\Debug\AppBanco.exe
+C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\AppBanco\AppBanco\obj\Debug\AppBanco.pdb

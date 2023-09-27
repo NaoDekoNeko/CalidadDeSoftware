@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\AppBanco\AppBanco\Transferencia.cs</title>
+    <script type="text/javascript" src="../js/dotcover.sourceview.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/dotcover.report.css" />
+  </head>
+  <body>
+    <pre id="content" class="source-code">
+using System;
+
+namespace AppBanco;
+
+public class Transferencia: ITransferencia
+{
+    public virtual void Transferir(IDebitar origen, IAbonar destino, decimal monto)
+    {
+        
+        if (monto &lt; 0) throw new InvalidTransferenceOperationException(&quot;Monto a transferir debe ser positivo.&quot;);
+        if (origen == null) throw new InvalidTransferenceOperationException(&quot;La cuenta de origen no existe&quot;);
+        if (destino == null) throw new InvalidTransferenceOperationException(&quot;La cuenta de destino no existe&quot;);
+        if (origen == destino)
+            throw new InvalidTransferenceOperationException(&quot;La cuenta de origen y destino no pueden ser la misma&quot;);
+        try
+        {
+            origen.Debitar(monto);
+            destino.Abonar(monto);
+        }
+        catch (Exception e)
+        {
+            throw new InvalidTransferenceOperationException(
+                &quot;No se pudo debitar desde la cuenta de origen debido a falta de fondos.&quot;);
+        }
+    }
+}
+
+
+    </pre>
+    <script type="text/javascript">
+      highlightRanges([[8,5,8,6,1],[10,9,10,23,1],[10,24,10,113,0],[11,9,11,28,1],[11,29,11,110,0],[12,9,12,29,1],[12,30,12,112,0],[13,9,13,31,1],[14,13,14,117,0],[16,9,16,10,1],[17,13,17,35,1],[18,13,18,35,1],[19,9,19,10,1],[20,9,20,28,1],[21,9,21,10,1],[22,13,23,91,1],[25,5,25,6,1]]);
+    </script>
+  </body>
+</html>

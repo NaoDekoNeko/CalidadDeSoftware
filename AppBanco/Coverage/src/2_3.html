@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\AppBanco\TestTransferencias\TestTransferencia.cs</title>
+    <script type="text/javascript" src="../js/dotcover.sourceview.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/dotcover.report.css" />
+  </head>
+  <body>
+    <pre id="content" class="source-code">
+using AppBanco;
+using Moq;
+using Xunit;
+
+namespace TestTransferencias
+{
+    public class TestTransferencia
+    {
+        private readonly Mock&lt;ITransferencia&gt; _transferenciaMock = new Mock&lt;ITransferencia&gt;();
+        private Cuenta _cuentaInicio;
+        private Cuenta _cuentaDestino;
+
+        [Fact]
+        public void TestTransferenciaExitosaAhorrosCorriente()
+        {
+            // Arrange
+            _cuentaInicio = new CuentaAhorros(300);
+            _cuentaDestino = new CuentaCorriente(200);
+            decimal montoTransferencia = 100;
+
+            // Configuramos el mock de la transferencia para que cuando se llame al m&#233;todo Transferir, 
+            // realmente transfiera el monto de la cuenta de inicio a la cuenta destino
+            _transferenciaMock.Setup(t =&gt; t.Transferir(It.IsAny&lt;IDebitar&gt;(), It.IsAny&lt;IAbonar&gt;(), montoTransferencia))
+                .Callback&lt;IDebitar, IAbonar, decimal&gt;((cuentaOrigen, cuentaDestino, monto) =&gt;
+                {
+                    cuentaOrigen.Debitar(monto);
+                    cuentaDestino.Abonar(monto);
+                });
+
+            // Act
+            // Realizamos una transferencia de 100 desde la cuenta de inicio a la cuenta destino
+            _transferenciaMock.Object.Transferir(_cuentaInicio, _cuentaDestino, montoTransferencia);
+
+            // Assert
+            // Verificamos que los saldos de las cuentas sean los esperados despu&#233;s de la transferencia
+            Assert.Equal(200, _cuentaInicio.Saldo);
+            Assert.Equal(300, _cuentaDestino.Saldo);
+        }
+
+        [Fact]
+        public void TestTransferenciaFallidaAhorrosCorriente()
+        {
+            // Arrange
+            _cuentaInicio = new CuentaAhorros();
+            _cuentaDestino = new CuentaCorriente(200);
+            decimal montoTransferencia = 100;
+
+            // Configuramos el mock de la transferencia para que cuando se llame al m&#233;todo Transferir con un monto que excede el saldo de la cuenta de inicio, lance una excepci&#243;n
+            _transferenciaMock.Setup(t =&gt;
+                    t.Transferir(_cuentaInicio, _cuentaDestino, It.Is&lt;decimal&gt;(m =&gt; m &gt; _cuentaInicio.Saldo)))
+                .Throws(new InvalidTransferenceOperationException(
+                    &quot;No se pudo debitar desde la cuenta de origen debido a falta de fondos.&quot;));
+
+            // Act - Assert
+            // Verificamos que se lance una excepci&#243;n InvalidTransferenceOperationException cuando intentamos realizar una transferencia sin fondos suficientes
+            var ex = Assert.Throws&lt;InvalidTransferenceOperationException&gt;(() =&gt;
+                _transferenciaMock.Object.Transferir(_cuentaInicio, _cuentaDestino, montoTransferencia));
+            Assert.Equal(&quot;No se pudo debitar desde la cuenta de origen debido a falta de fondos.&quot;, ex.Message);
+        }
+    }
+}
+    </pre>
+    <script type="text/javascript">
+      highlightRanges([[9,9,9,95,1],[15,9,15,10,1],[17,13,17,52,1],[18,13,18,55,1],[19,13,19,46,1],[23,13,25,17,1],[25,17,25,18,1],[25,18,26,21,1],[26,21,26,49,1],[26,49,27,21,1],[27,21,27,49,1],[27,49,28,17,1],[28,17,28,18,1],[28,18,28,20,1],[32,13,32,101,1],[36,13,36,52,1],[37,13,37,53,1],[38,9,38,10,1],[42,9,42,10,1],[44,13,44,49,1],[45,13,45,55,1],[46,13,46,46,1],[49,13,52,96,1],[56,13,57,17,1],[57,17,57,104,1],[57,104,57,106,1],[58,13,58,112,1],[59,9,59,10,1]]);
+    </script>
+  </body>
+</html>

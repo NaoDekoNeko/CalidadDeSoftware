@@ -1,0 +1,8 @@
+C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\PruebasUnitarias\bin\Debug\PruebasUnitarias.exe.config
+C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\PruebasUnitarias\bin\Debug\PruebasUnitarias.exe
+C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\PruebasUnitarias\bin\Debug\PruebasUnitarias.pdb
+C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\PruebasUnitarias\obj\Debug\PruebasUnitarias.csproj.AssemblyReference.cache
+C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\PruebasUnitarias\obj\Debug\PruebasUnitarias.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\PruebasUnitarias\obj\Debug\PruebasUnitarias.csproj.CoreCompileInputs.cache
+C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\PruebasUnitarias\obj\Debug\PruebasUnitarias.exe
+C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\PruebasUnitarias\obj\Debug\PruebasUnitarias.pdb
