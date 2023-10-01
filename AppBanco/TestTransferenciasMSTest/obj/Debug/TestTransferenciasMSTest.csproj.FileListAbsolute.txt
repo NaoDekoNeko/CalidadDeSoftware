@@ -1,0 +1,2 @@
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\AppBanco\TestTransferenciasMSTest\obj\Debug\TestTransferenciasMSTest.csproj.AssemblyReference.cache
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\AppBanco\TestTransferenciasMSTest\obj\Debug\TestTransferenciasMSTest.csproj.CoreCompileInputs.cache

@@ -17,7 +17,7 @@ public class Transferencia: ITransferencia
             origen.Debitar(monto);
             destino.Abonar(monto);
         }
-        catch (Exception e)
+        catch (Exception)
         {
             throw new InvalidTransferenceOperationException(
                 "No se pudo debitar desde la cuenta de origen debido a falta de fondos.");
