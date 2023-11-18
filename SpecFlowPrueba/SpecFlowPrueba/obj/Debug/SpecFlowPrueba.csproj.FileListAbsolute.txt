@@ -1,7 +1,0 @@
-C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\SpecFlowPrueba\SpecFlowPrueba\obj\Debug\SpecFlowPrueba.csproj.AssemblyReference.cache
-C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\SpecFlowPrueba\SpecFlowPrueba\obj\Debug\SpecFlowPrueba.csproj.CoreCompileInputs.cache
-C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\SpecFlowPrueba\SpecFlowPrueba\bin\Debug\SpecFlowPrueba.exe.config
-C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\SpecFlowPrueba\SpecFlowPrueba\bin\Debug\SpecFlowPrueba.exe
-C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\SpecFlowPrueba\SpecFlowPrueba\bin\Debug\SpecFlowPrueba.pdb
-C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\SpecFlowPrueba\SpecFlowPrueba\obj\Debug\SpecFlowPrueba.exe
-C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\SpecFlowPrueba\SpecFlowPrueba\obj\Debug\SpecFlowPrueba.pdb
