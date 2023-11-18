@@ -31,7 +31,7 @@ function reemplazarImporte(){
   var regex = /S\/[\s]?\.[\s]?(\d+(\.\d{1,2})?)/gi;
   var nuevoTexto = fileContent.replace(regex, function(match, p1) {
     var importeDolares = parseFloat(p1) / 3.8;
-    return '$' + importeDolares.toFixed(2);
+    return '$/.' + importeDolares.toFixed(2);
   });
   var p = document.createElement('p');
   p.textContent = nuevoTexto;

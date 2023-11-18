@@ -1,0 +1,7 @@
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\RGRGeom\RGRGeom\bin\Debug\RGRGeom.exe.config
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\RGRGeom\RGRGeom\bin\Debug\RGRGeom.exe
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\RGRGeom\RGRGeom\bin\Debug\RGRGeom.pdb
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\RGRGeom\RGRGeom\obj\Debug\RGRGeom.csproj.AssemblyReference.cache
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\RGRGeom\RGRGeom\obj\Debug\RGRGeom.csproj.CoreCompileInputs.cache
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\RGRGeom\RGRGeom\obj\Debug\RGRGeom.exe
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\RGRGeom\RGRGeom\obj\Debug\RGRGeom.pdb

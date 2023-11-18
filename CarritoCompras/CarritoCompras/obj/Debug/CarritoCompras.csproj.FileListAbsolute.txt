@@ -1,0 +1,7 @@
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\CarritoCompras\CarritoCompras\bin\Debug\CarritoCompras.exe.config
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\CarritoCompras\CarritoCompras\bin\Debug\CarritoCompras.exe
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\CarritoCompras\CarritoCompras\bin\Debug\CarritoCompras.pdb
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\CarritoCompras\CarritoCompras\obj\Debug\CarritoCompras.csproj.AssemblyReference.cache
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\CarritoCompras\CarritoCompras\obj\Debug\CarritoCompras.csproj.CoreCompileInputs.cache
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\CarritoCompras\CarritoCompras\obj\Debug\CarritoCompras.exe
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\CarritoCompras\CarritoCompras\obj\Debug\CarritoCompras.pdb

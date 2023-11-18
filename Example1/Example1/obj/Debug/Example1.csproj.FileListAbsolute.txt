@@ -1,0 +1,7 @@
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\Example1\Example1\bin\Debug\Example1.exe.config
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\Example1\Example1\bin\Debug\Example1.exe
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\Example1\Example1\bin\Debug\Example1.pdb
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\Example1\Example1\obj\Debug\Example1.csproj.AssemblyReference.cache
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\Example1\Example1\obj\Debug\Example1.csproj.CoreCompileInputs.cache
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\Example1\Example1\obj\Debug\Example1.exe
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\Example1\Example1\obj\Debug\Example1.pdb
