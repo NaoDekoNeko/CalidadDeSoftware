@@ -1,9 +1,0 @@
-C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\Prueba\Prueba\bin\Debug\Prueba.exe.config
-C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\Prueba\Prueba\bin\Debug\Prueba.exe
-C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\Prueba\Prueba\bin\Debug\Prueba.pdb
-C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\Prueba\Prueba\obj\Debug\Prueba.csproj.AssemblyReference.cache
-C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\Prueba\Prueba\obj\Debug\Prueba.Properties.Resources.resources
-C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\Prueba\Prueba\obj\Debug\Prueba.csproj.GenerateResource.cache
-C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\Prueba\Prueba\obj\Debug\Prueba.csproj.CoreCompileInputs.cache
-C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\Prueba\Prueba\obj\Debug\Prueba.exe
-C:\Users\Ademar\OneDrive\Desktop\CalidadDeSoftware\Prueba\Prueba\obj\Debug\Prueba.pdb
