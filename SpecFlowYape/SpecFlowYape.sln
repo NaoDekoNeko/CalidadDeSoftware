@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowYape", "SpecFlowYape\SpecFlowYape.csproj", "{EB65F1E4-FD83-456E-B467-2F7F01C1911B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowProjectYape.Specs", "SpecFlowProjectYape.Specs\SpecFlowProjectYape.Specs.csproj", "{2006DDF3-3736-47A8-99A5-552A27550FF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB65F1E4-FD83-456E-B467-2F7F01C1911B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB65F1E4-FD83-456E-B467-2F7F01C1911B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB65F1E4-FD83-456E-B467-2F7F01C1911B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB65F1E4-FD83-456E-B467-2F7F01C1911B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2006DDF3-3736-47A8-99A5-552A27550FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2006DDF3-3736-47A8-99A5-552A27550FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2006DDF3-3736-47A8-99A5-552A27550FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2006DDF3-3736-47A8-99A5-552A27550FF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1764C846-1147-4D1B-B05A-3A12315E0FDF}
+	EndGlobalSection
+EndGlobal

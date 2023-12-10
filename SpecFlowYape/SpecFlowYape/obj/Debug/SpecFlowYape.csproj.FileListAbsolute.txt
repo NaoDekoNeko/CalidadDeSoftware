@@ -1,0 +1,7 @@
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\SpecFlowYape\SpecFlowYape\bin\Debug\SpecFlowYape.exe.config
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\SpecFlowYape\SpecFlowYape\bin\Debug\SpecFlowYape.exe
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\SpecFlowYape\SpecFlowYape\bin\Debug\SpecFlowYape.pdb
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\SpecFlowYape\SpecFlowYape\obj\Debug\SpecFlowYape.csproj.AssemblyReference.cache
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\SpecFlowYape\SpecFlowYape\obj\Debug\SpecFlowYape.csproj.CoreCompileInputs.cache
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\SpecFlowYape\SpecFlowYape\obj\Debug\SpecFlowYape.exe
+C:\Users\adfat\OneDrive\Desktop\CalidadDeSoftware\SpecFlowYape\SpecFlowYape\obj\Debug\SpecFlowYape.pdb
